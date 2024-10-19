@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "5ad9ac19-1974-4315-8987-3c618823004a",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16618378"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"book\" :\"The Prince 3\",\r\n    \"author\" :\"Machiavelli\",\r\n    \"year\":\"1560\",\r\n    \"price\" :\"250\",\r\n    \"discount\" :\"5\",\r\n    \"pages\":\"250\",\r\n    \"condition\" :\"New\",\r\n    \"description\" :\"Book on politics\",\r\n    \"comments\":\"Good book\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/addcomic",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"addcomic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/getcomics",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"getcomics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/deletecomic/67122ee4e17e2f8f5e486048",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/deletecomic/67122ee4e17e2f8f5e486048",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"deletecomic",
+						"67122ee4e17e2f8f5e486048"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
